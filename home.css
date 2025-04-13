@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00bfff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bfff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+  color: #00bfff;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-filled {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+}
+
+.btn-filled:hover {
+  background-color: #009acd;
+}
+
+.btn-outline {
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+.hero-image img {
+  width: 320px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.social-icons {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 100px;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+.footer {
+  color: #00bfff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    font-size: 50px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+}
